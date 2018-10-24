@@ -10,3 +10,5 @@ print (not true, not false, true and false, false or true)
 a = input("Hello? ")
 if a == "Hello" or a == "hello":
     print ("Best language")
+elif a=="bye":
+    print ("ok bye")
