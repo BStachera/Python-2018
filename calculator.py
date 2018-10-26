@@ -25,10 +25,9 @@ while lop == True:
 	else:
 		wynik = calc(x)
 		y = int(len(str(wynik)))
-		spacje = int((len("{0}Wynik: {1}{2}".format("| ",wynik," |"))))- 9 -int((len(str(y))))
-		print (spacje)
+		spac = int((len("{0}Wynik: {1}{2}".format("| ",wynik," |"))))- 10 -int((len(str(y))))
 		print ("{0}Wynik: {1}{2}".format("| ",wynik," |"))
-		print ("| znaki: {0}{1}|".format(y,spacje(spacje)))
+		print ("| znaki: {0}{1}|".format(y,spacje(spac)))
 
          
          
