@@ -4,21 +4,11 @@ def calc(x):
 def zasady(a):
     role = ["Aby zakończyć wpisz: end","wpisuj zgodnie z programowaniem","baw się dobrze"]
     return role[a]
-
-def klatka(wynik,znak):
-    text = ""
-    dlugosc = len(str(wynik))+11
-    if znak == " " and dlugość >= 190:
-        for j in range(0,190):
-            text += znak
-    else:       
-        if dlugosc >= 216:
-            for j in range(0,216):
-                text += znak
-        else:
-            for j in range(0,dlugosc):
-                text += znak
-	 return text
+def spacje(spacje):
+	space = ""
+	for x in range(spacje):
+		space += " "
+	return space
 
 print("\n{:=^10}".format(""),end="")
 print(" HOW TO USE CALCULATOR ",end="")
@@ -34,10 +24,11 @@ while lop == True:
 		lop = False
 	else:
 		wynik = calc(x)
-        print (klatka(wynik,"-"))
-		print("{0}Wynik: {1}{2}".format("| ",wynik," |"))
-		print (klatka(wynik,"-"))
-		print("| znaki: {0}{1}|".format(len(str(wynik)), klatka(wynik," ")))
-		print (klatka(wynik,"-"))
+		y = int(len(str(wynik)))
+		spacje = int((len("{0}Wynik: {1}{2}".format("| ",wynik," |"))))- 9 -int((len(str(y))))
+		print (spacje)
+		print ("{0}Wynik: {1}{2}".format("| ",wynik," |"))
+		print ("| znaki: {0}{1}|".format(y,spacje(spacje)))
+
          
          
