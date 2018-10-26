@@ -24,3 +24,4 @@ for i in range(1,11):
         print("\n{:-^53}".format(""),end="")
     print("")
     
+print(len(" liczba znaków to:"))
